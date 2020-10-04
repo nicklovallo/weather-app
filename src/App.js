@@ -12,7 +12,7 @@ function App() {
   const apiKey = 'c33a8168088f3abc66a2cb55cd7877a8'
 
   const getWeather = (city) => {
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`)
       .then(res => res.json())
       .then(result => setWeather(result))
       .catch(err => {
