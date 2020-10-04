@@ -14,7 +14,7 @@ function MapContainer({ weather }) {
   };
 
   return (
-    <LoadScript googleMapsApiKey='AIzaSyCvhg0WbijjNgZkCNGyXcdOZtjvhQtiiOk'>
+    <LoadScript googleMapsApiKey={process.env.REACT_APP_GOOGLEMAPS_API_KEY}>
       <GoogleMap
         mapContainerStyle={mapStyles}
         zoom={5}

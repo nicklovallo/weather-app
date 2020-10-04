@@ -9,7 +9,7 @@ function App() {
   const [search, setSearch] = useState();
   const [weather, setWeather] = useState();
 
-  const apiKey = 'c33a8168088f3abc66a2cb55cd7877a8'
+  const apiKey = process.env.REACT_APP_OPENWEATHER_API_KEY;
 
   const getWeather = (city) => {
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`)
